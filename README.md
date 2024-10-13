@@ -14,8 +14,6 @@ This project is a clone of the Glovo app, focusing on the core functionality and
 - **Profile Screen**: Shows user profile information.
 - **Add delivery address Screen**:This screen allows users to input and save their delivery address information.
 
-## Technical Challenges Faced
-
 ## Future Plans
  -Add more pages 
 - Implement navigation between screens.
