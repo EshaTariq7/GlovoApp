@@ -1,0 +1,26 @@
+<!--
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.GlovoApp" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+
+    <style name="Theme.GlovoApp" parent="Base.Theme.GlovoApp" />
+</resources>-->
+
+<resources>
+<!-- Base application theme -->
+<style name="Theme.GlovoApp" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/glovo_green</item>
+    <item name="colorPrimaryDark">@color/glovo_green</item>
+    <item name="colorAccent">@color/glovo_green</item>
+
+    <!-- Override button styles -->
+    <item name="buttonStyle">@style/GreenButton</item>
+</style>
+
+<style name="GreenButton" parent="Widget.AppCompat.Button">
+    <item name="android:background">@drawable/rounded_button</item>
+    <item name="android:textColor">#FFFFFF</item>
+</style>
+</resources>

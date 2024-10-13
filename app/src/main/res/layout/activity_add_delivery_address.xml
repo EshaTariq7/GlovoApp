@@ -1,0 +1,52 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a delivery address"
+        android:textSize="24sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edit_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for streets, cities, districts..."
+        android:padding="12dp"/> <!-- Added padding for touch target -->
+    <!-- Location Button -->
+    <Button
+        android:id="@+id/location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use current location"
+        android:background="@drawable/rounded_button"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/address_input"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp" />
+    <!-- Map Image -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="end"/>
+    <!-- Instruction TextView -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or set your location on the map"
+        android:textColor="#008C71"
+    android:textStyle="bold"
+    android:layout_marginTop="20dp"
+    android:gravity="center"/>
+</LinearLayout>

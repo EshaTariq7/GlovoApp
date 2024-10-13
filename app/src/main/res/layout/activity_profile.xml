@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- Yellow Background Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FEC84D"> <!-- Yellow background -->
+    <!-- Header Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Help Button -->
+        <Button
+            android:id="@+id/helpButton"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <!-- Greeting Text -->
+    <TextView
+        android:id="@+id/greeting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, User Name!"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="start"
+        android:textColor="#000000" />
+    </LinearLayout>
+    <!-- White Background Section for Image -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="#FFFFFF">
+    <!-- Image that fits the screen -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pro"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true" />
+    </LinearLayout>
+</LinearLayout>

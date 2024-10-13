@@ -1,0 +1,114 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's start with your phone number"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Country Code Spinner -->
+        <Spinner
+            android:id="@+id/spinner_country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:minHeight="48dp"
+            android:background="@android:drawable/edit_text" />
+
+        <!-- Phone Number Input -->
+        <EditText
+            android:id="@+id/edit_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+    <!-- Buttons for WhatsApp and SMS Login -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_whatsapp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="WhatsApp"
+            android:layout_weight="1"
+            android:minHeight="48dp"/> <!-- Ensures minimum height -->
+
+        <Button
+            android:id="@+id/btn_sms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SMS"
+            android:layout_weight="1"
+            android:minHeight="48dp"/> <!-- Ensures minimum height -->
+    </LinearLayout>
+
+    <!-- Other login options -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or continue with"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btn_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            android:minHeight="48dp"/> <!-- Ensures minimum height -->
+
+        <Button
+            android:id="@+id/btn_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"/> <!-- Ensures minimum height -->
+
+        <Button
+            android:id="@+id/btn_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"/> <!-- Ensures minimum height -->
+    </LinearLayout>
+</LinearLayout>
