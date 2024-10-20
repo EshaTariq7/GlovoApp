@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Highlighted background when pressed -->
+    <item android:state_pressed="true">
+        <color android:color="#E1E9E9" /> <!-- Light orange highlight color -->
+    </item>
+    <!-- Default background when not pressed -->
+    <item>
+        <color android:color="@android:color/white" />
+    </item>
+</selector>

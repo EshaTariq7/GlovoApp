@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_button"
+        android:text="Back"
+        android:textColor="#FFFFFF" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/cart_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Cart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Cart Items List -->
+    <TextView
+        android:id="@+id/cartItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No items in the cart yet"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:layout_gravity="center" />
+
+    <!-- Total Amount -->
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: $0.00"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center" />
+
+    <!-- Checkout Button -->
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/rounded_button"
+        android:text="Proceed to Checkout"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

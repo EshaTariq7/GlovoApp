@@ -25,11 +25,19 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AddDeliveryAddressActivity::class.java)
             startActivity(intent)
         }
-        // Navigate to Profile Activity when the profile image is clicked
-        binding.profileImage.setOnClickListener {
-            val intent = Intent(this, ProfileActivity::class.java)
-            startActivity(intent)
+
+
+        // Set up the click listener for the "Explore Stores" button
+        binding.exploreStore.setOnClickListener {
+            openStoresActivity()  // Call the function to open StoresActivity
         }
     }
-}
+
+    // Method to open StoresActivity when the button is clicked
+    private fun openStoresActivity() {
+        val intent = Intent(this, StoresActivity::class.java)
+        startActivity(intent)
+    }
+    }
+
 
