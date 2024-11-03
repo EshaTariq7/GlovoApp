@@ -29,15 +29,25 @@
         android:layout_gravity="center"
         android:layout_marginBottom="16dp" />
 
-    <!-- Cart Items List -->
+    <!-- Empty Cart Message (initially hidden) -->
     <TextView
-        android:id="@+id/cartItems"
+        android:id="@+id/emptyCartMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="No items in the cart yet"
+        android:text="Your cart is empty."
+        android:textSize="18sp"
         android:textColor="@android:color/darker_gray"
-        android:textSize="16sp"
-        android:layout_gravity="center" />
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="16dp" />
+
+    <!-- RecyclerView for displaying cart items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
 
     <!-- Total Amount -->
     <TextView
@@ -55,10 +65,10 @@
         android:id="@+id/checkoutButton"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_button"
         android:text="Proceed to Checkout"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center" />
 
 </LinearLayout>

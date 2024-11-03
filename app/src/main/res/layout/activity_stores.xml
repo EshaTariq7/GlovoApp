@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FDC13B">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,10 +23,9 @@
             android:focusable="true"
             android:scaleType="fitCenter"
             android:src="@drawable/loggo" />
-
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
-            android:layout_width="10dp"
+            android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:background="@drawable/search_bg"
@@ -35,7 +33,8 @@
             android:padding="8dp"
             android:queryHint="What can we get you?"
             android:textColor="@android:color/black"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="#000000"
+            />
 
         <ImageView
             android:id="@+id/cartIcon"
@@ -47,8 +46,6 @@
             android:clickable="true"
             android:focusable="true" />
     </LinearLayout>
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -147,9 +144,11 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/vicio_layout"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_columnWeight="1"
+                        android:background="@drawable/highlight_bg"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="8dp">
@@ -172,9 +171,11 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/five_guys_layout"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_columnWeight="1"
+                        android:background="@drawable/highlight_bg"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="8dp">
@@ -197,9 +198,11 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/condis_layout"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_columnWeight="1"
+                        android:background="@drawable/highlight_bg"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="8dp">
@@ -222,9 +225,11 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/honest_green_layout"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_columnWeight="1"
+                        android:background="@drawable/highlight_bg"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="8dp">

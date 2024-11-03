@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="5dp">
+
+    <!-- Banner Image at the top -->
+    <ImageView
+        android:id="@+id/condis_banner"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:contentDescription="Condis Banner"
+        android:scaleType="centerCrop"
+        android:src="@drawable/condis_banner" />
+
+    <!-- Search Bar below the banner -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/condis_searchView"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/search_bg"
+        android:queryHint="Search for items..."
+        android:iconifiedByDefault="false"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:padding="8dp" />
+
+    <!-- RecyclerView for displaying menu items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menuRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

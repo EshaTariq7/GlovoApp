@@ -27,10 +27,20 @@
         <activity android:name=".LoginActivity" android:exported="true"></activity>
         <activity android:name=".AddDeliveryAddressActivity" />
         <activity android:name=".ProfileActivity" />
+        <activity android:name=".OrdersActivity" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".LanguageActivity" />
         <activity android:name=".StoresActivity" />
         <activity android:name=".McdonaldActivity" />
         <activity android:name=".KfcActivity" />
+        <activity android:name=".VicioActivity" />
+        <activity android:name=".FiveGuysActivity" />
+        <activity android:name=".CondisActivity" />
+        <activity android:name=".HonestGreensActivity" />
         <activity android:name=".CartActivity" />
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".CardInfoActivity" />
+
 
     </application>
 </manifest>
