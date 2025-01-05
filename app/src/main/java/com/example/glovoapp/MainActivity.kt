@@ -29,7 +29,9 @@ class MainActivity : AppCompatActivity() {
 
         // Set up the click listener for the "Explore Stores" button
         binding.exploreStore.setOnClickListener {
-            openStoresActivity()  // Call the function to open StoresActivity
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+           // openStoresActivity()  // Call the function to open StoresActivity
         }
     }
 

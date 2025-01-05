@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">GlovoApp</string>
     <string name="profile_icon">Profile Icon</string>
+
+    <string name="default_web_client_id">792952404238-8vspafbug9cvjgpu0f2l8do1288f03ja.apps.googleusercontent.com</string>
+
 </resources>

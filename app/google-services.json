@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "792952404238",
+    "project_id": "glovoapp-9045c",
+    "storage_bucket": "glovoapp-9045c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792952404238:android:f31f2d48b5e10f72973f5f",
+        "android_client_info": {
+          "package_name": "com.example.glovoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZi_OsQcLFce4cffruHBHn0wiI7eAeNTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

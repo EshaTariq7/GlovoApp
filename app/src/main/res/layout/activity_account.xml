@@ -38,8 +38,6 @@
         android:layout_marginTop="40dp"
         android:orientation="horizontal">
 
-        <!-- Replace with your actual icon resource -->
-
         <ImageView
             android:id="@+id/username_icon"
             android:layout_width="wrap_content"
@@ -53,7 +51,6 @@
             android:layout_weight="1"
             android:layout_marginStart="8dp"
             android:hint="Enter your username"
-            android:text="user123"
             android:inputType="textPersonName" />
     </LinearLayout>
 
@@ -70,7 +67,7 @@
             android:id="@+id/email_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/email" /> <!-- Replace with your actual icon resource -->
+            android:src="@drawable/email" />
 
         <EditText
             android:id="@+id/email_edit"
@@ -79,7 +76,6 @@
             android:layout_weight="1"
             android:layout_marginStart="8dp"
             android:hint="Enter your email"
-            android:text="user@example.com"
             android:inputType="textEmailAddress" />
     </LinearLayout>
 
@@ -91,8 +87,6 @@
         android:layout_below="@id/email_section"
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
-
-        <!-- Replace with your actual icon resource -->
 
         <ImageView
             android:id="@+id/change_password_icon"
@@ -114,4 +108,15 @@
             android:textStyle="bold" />
     </LinearLayout>
 
+    <!-- Save Changes Button -->
+    <Button
+        android:id="@+id/saveChangesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change_password_section"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="Save Changes"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
 </RelativeLayout>

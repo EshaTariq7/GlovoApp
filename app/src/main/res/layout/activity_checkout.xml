@@ -101,14 +101,15 @@
                     android:layout_marginEnd="8dp"
                     android:contentDescription="Location Icon"
                     android:src="@drawable/location_icon" />
-
                 <TextView
                     android:id="@+id/deliveryDetails"
-                    android:layout_width="315dp"
-                    android:layout_height="match_parent"
-                    android:text="123 Main Street, City, Country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Address"
+                    android:textSize="18sp"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:clickable="true"
+                    android:focusable="true" />
             </LinearLayout>
 
             <!-- Payment Method Section with Options -->
